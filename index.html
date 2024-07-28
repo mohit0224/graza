@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0" />
+		<title>Graza</title>
+		<link rel="stylesheet" href="css/style.css" />
+		<script src="https://cdn.tailwindcss.com"></script>
+	</head>
+	<body class="bg-[--bg-primary]">
+		<main>
+			<section>
+				<div class="w-screen h-screen lg:flex">
+					<!-- crousel -->
+					<div class="h-[70%] sm:h-[90%] lg:h-full flex-1 bg-red-500">
+						<div class="h-full relative">
+							<img
+								src="./images/image-1.webp"
+								alt="image"
+								class="h-full w-full object-cover sm:object-[center_top]"
+								id="sliderImag"
+							/>
+							<div
+								id="sliderBtns"
+								class="absolute bottom-10 left-10 flex flex-col gap-2"
+							></div>
+						</div>
+					</div>
+
+					<!-- right -->
+					<div class="h-full flex-1 overflow-hidden">
+						<div class="rightBox h-full overflow-y-auto pt-5">
+							<div
+								class="flex flex-col items-center md:w-2/3 lg:w-full xl:w-3/4 mx-auto mt-20"
+							>
+								<!-- title block -->
+								<div class="px-[30px] flex flex-col items-center gap-8">
+									<div>
+										<h1
+											class="text-5xl text-center leading-[48px] -tracking-[-1.44px]"
+										>
+											“The Duo” <br />Drizzle & Sizzle Set
+										</h1>
+									</div>
+
+									<div class="flex items-center gap-2">
+										<div class="flex">
+											<img src="./images/star.png" class="h-4 w-4" alt="star" />
+											<img src="./images/star.png" class="h-4 w-4" alt="star" />
+											<img src="./images/star.png" class="h-4 w-4" alt="star" />
+											<img src="./images/star.png" class="h-4 w-4" alt="star" />
+											<img src="./images/star.png" class="h-4 w-4" alt="star" />
+										</div>
+										<div><h5>2143 Reviews</h5></div>
+									</div>
+								</div>
+
+								<!-- quantity -->
+								<div class="w-full px-[30px]">
+									<div
+										class="w-full mt-5 p-5 border border-[--border-primary] rounded-[20px] bg-[--bg-secondary]"
+									>
+										<div>
+											<p class="text-lg">Quantity</p>
+											<div
+												id="quantityBox"
+												class="mt-2 grid grid-cols-2 md:grid-cols-4 gap-[10px]"
+											></div>
+										</div>
+
+										<!-- Purchase section -->
+										<div
+											class="w-full mt-[10px] border-y border-dashed border-[--border-primary]"
+										>
+											<!-- one time purchase -->
+											<div
+												class="py-4 flex items-center justify-between border-b border-dashed border-[--border-primary]"
+											>
+												<div class="flex items-center gap-5">
+													<input
+														type="radio"
+														name="subscribe"
+														id="OTP"
+														value="OTP"
+														class="w-5 h-5 p-0 bg-[--selected-background] accent-[--selected-background]"
+													/>
+													<label for="OTP" class="text-xl"
+														>One Time Purchase</label
+													>
+												</div>
+												<div class="flex gap-1">
+													<del class="del text-slate-400 hidden">$0</del>
+													<p class="price">$37</p>
+												</div>
+											</div>
+
+											<!-- one time purchase -->
+											<div class="py-4 flex items-center justify-between">
+												<div class="flex items-center gap-5">
+													<input
+														type="radio"
+														name="subscribe"
+														id="subscribe"
+														value="subscribe"
+														class="w-5 h-5 p-0 bg-[--selected-background] accent-[--selected-background]"
+													/>
+													<label for="subscribe" class="text-xl"
+														>Subscribe & Save</label
+													>
+												</div>
+												<div class="flex gap-1">
+													<del class="del text-slate-400">$37</del>
+													<p class="price">$33.30</p>
+												</div>
+											</div>
+										</div>
+
+										<!-- add to cart btn -->
+
+										<div class="mt-">
+											<button
+												class="w-full mt-5 p-2 text-xl bg-[--btn-primary] rounded-full"
+											>
+												Add to cart - <span class="cartPrice">$33</span>
+											</button>
+											<p class="text-center mt-[10px]">
+												Skip, Edit or Cancel Anytime
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- refil -->
+								<div class="w-full px-[30px]">
+									<div
+										class="w-full mt-5 p-5 border border-[--border-primary] rounded-[20px] bg-[--bg-secondary] flex items-center gap-3"
+									>
+										<div class="w-[120px] h-[120px]">
+											<img
+												src="./images/refils.avif"
+												alt="refil"
+												class="w-full h-full object-cover"
+											/>
+										</div>
+										<div class="space-y-1">
+											<h3 class="text-xl">Get Refills!</h3>
+											<p class="text-lg">“The Duo” Refill Cans</p>
+											<button
+												class="px-5 py-1 border border-[--border-primary] rounded-full text-lg"
+											>
+												Add - <span class="btnRefil">$37</span>
+											</button>
+										</div>
+									</div>
+								</div>
+
+								<!-- gifts -->
+								<div class="w-full px-[30px]">
+									<div
+										class="w-full mt-5 p-5 border border-[--border-primary] rounded-[20px] bg-[--bg-secondary] flex items-center gap-3"
+									>
+										<div class="w-[120px] h-[80px] shrink-0">
+											<img
+												src="./images/graza-gift-icon.webp"
+												alt=""
+												class="w-full h-full object-cover"
+											/>
+										</div>
+
+										<div>
+											<p class="text-xl">
+												Buying multiple gifts? Send to multiple addresses here.
+											</p>
+										</div>
+									</div>
+								</div>
+
+								<!-- tabs -->
+								<div class="w-full mt-5 px-[30px]">
+									<div class="flex">
+										<div
+											class="tabs flex-1 rounded-t-[10px] border-t border-r border-l border-[--border-primary] py-2 text-center cursor-pointer tabBackground"
+										>
+											DETAILS
+										</div>
+										<div
+											class="tabs flex-1 rounded-t-[10px] border-t border-r border-[--border-primary] py-2 text-center cursor-pointer"
+										>
+											HARVEST
+										</div>
+										<div
+											class="tabs flex-1 rounded-t-[10px] border-t border-r border-[--border-primary] py-2 text-center cursor-pointer"
+										>
+											USES
+										</div>
+										<div
+											class="tabs flex-1 rounded-t-[10px] border-t border-r border-[--border-primary] py-2 text-center cursor-pointer"
+										>
+											REFILLS
+										</div>
+									</div>
+									<div
+										class="border rounded-b-[10px] border-[--border-primary] p-5"
+									>
+										<div class="tabDetails">
+											<p>
+												<strong>Drizzle: 500ML</strong> Extra Virgin finishing
+												oil made from olives that are picked early, when flavor
+												is bold and antioxidants are highest. Made for eating,
+												not heating.
+											</p>
+											<br />
+											<p>
+												<strong>Sizzle: 750ML</strong> Extra Virgin cooking oil
+												made from mature, mid-season olives that yield a more
+												mellow flavor. Use it every day, in every way.
+											</p>
+										</div>
+
+										<div class="tabDetails hidden">
+											<p>
+												<strong>DRIZZLE:</strong> Harvested in October, before
+												the olives have ripened fully. Picked by hand because
+												young olives need a firm yank to loosen up.
+											</p>
+											<br />
+											<p>
+												<strong>SIZZLE:</strong> Harvested in November and
+												December, when the olives are more mature. They’re
+												pretty laid back by this point, so it only takes a few
+												shakes to get them off the branch.
+											</p>
+										</div>
+
+										<div class="tabDetails hidden">
+											<p>
+												<strong>DRIZZLE:</strong> A little Drizzle goes a long
+												way! Put it on your ice cream or popcorn, whip up a
+												pesto or salad dressing, or drink it straight from a
+												spoon (we won’t tell).
+											</p>
+											<br />
+											<p>
+												<strong>SIZZLE:</strong> If you would put it in or on
+												top of an oven, use Sizzle. Chicken cutlets, sheet pan
+												veggies, fried rice, or even chocolate chip cookies! You
+												name it, Sizzle Sizzles it.
+											</p>
+										</div>
+
+										<div class="tabDetails hidden">
+											<strong>“DRIZZLE” REFILL CAN: 500 ML</strong>
+											<br />
+											<strong>“SIZZLE” REFILL CAN: 750 ML</strong>
+											<br />
+											<p>
+												Perfectly portioned and 100% recyclable, our “beer can”
+												refills are designed to keep your delicious olive oil
+												super fresh. Just crack open, pour into a squeeze bottle
+												(using a kitchen funnel!) and get cookin'.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- dummy text -->
+							<!--  -->
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="divi w-full h-20"></div>
+		</main>
+
+		<script src="./js/script.js"></script>
+	</body>
+</html>

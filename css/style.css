@@ -1,0 +1,42 @@
+
+
+:root{
+    --bg-primary : #F5E7D9;
+    --bg-secondary : #FEF2EC;
+    --bg-third : #3D422F;
+    --selected-background : #9FEF81;
+    --color-primary : #3D422F;
+    --color-secondary : #FEF2EC;
+    --btn-primary : #D1DE2E;
+    --border-primary : #3D422F;
+    --select-border : #FEF2EC;
+}
+
+@font-face {
+    font-family: graza;
+    src: url(./fonts/graza.ttf);
+}
+
+body{
+    font-family: graza;
+    color: var(--color-primary);
+    overflow-x: hidden;
+}
+
+.selectedBackground{
+    background-color: var(--selected-background);
+}
+
+.tabBackground{
+    background-color: var(--bg-third);
+    color : var(--color-secondary)
+}
+
+.rightBox{
+    overflow-x: hidden;
+}
+
+.rightBox::-webkit-scrollbar {
+    display: none;
+    width: 0;
+}
